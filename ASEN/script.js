@@ -218,3 +218,19 @@ function ss8(images) {
 window.addEventListener("load", function () {
     ss8(ss8images)
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+    let btn = document.querySelector("#directtopbtn");
+    window.onscroll = function () { scrollfun(); };
+    function scrollfun(e) {
+        if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+            btn.style.display = "block";
+        } else {
+            btn.style.display = "none";
+        }
+    }
+    btn.addEventListener("click", function top() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    });
+});
