@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+
+<body>
+    <!-- navbara -->
+    <nav>
+        <div class="navbar">
+            <div class="logo"><img src="Amaro (1).png" alt=""></div>
+            <div class="nav-links1">
+                <ul class="links1">
+                    <li><a class="hellow1" id="signiin" href="#">Sign In / Join ASEN</a></li>
+                    <li><a class="hellow1" href="">Customer Care</a></li>
+                    <li><a class="hellow2" href="">ASEN LUXE</a></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--signup -->
+    <div class="popup">
+        <div class="popupinner">
+            <div class="text">
+                <button class="closebutton">X</button>
+                <h4 class="hello2">Welcome to ASEN</h4>
+                <p class="hello2"><a href="#" id="signupclick">Join / Sign In using</a></p>
+                <div class="login-type">
+                    <div class="facebook">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2335/2335355.png" alt="">
+                        <p>FACEBOOK</p>
+                    </div>
+                    <div class="google">
+                        <img src="https://cdn-icons-png.flaticon.com/128/300/300221.png" alt="">
+                        <p>GOOGLE</p>
+                    </div>
+                </div>
+                <div style="text-align: center;margin-top: 5%;">------------------------- OR
+                    ---------------------------- </div>
+                <form id="sigin-form" action="">
+                    <p>Enter Mobile Number / Email*</p>
+                    <input id="siginmail" type="text" placeholder="" required>
+                    <p>Enter Password</p>
+                    <input id="siginpassword" type="text">
+                    <!-- <br> -->
+                    <input class="btn" type="submit" value="Login">
+                </form>
+                <a class="forgottpwd hello2" href="#">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- sigup -->
+    <div class="popup1">
+        <div class="popupinner1">
+            <div class="text1">
+                <button class="closebutton1">X</button>
+                <h4 class="hello2">Welcome to ASEN</h4>
+                <p class="hello2">Join In using</p>
+                <div class="signup-type">
+                    <div class="facebook">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2335/2335355.png" alt="">
+                        <p>FACEBOOK</p>
+                    </div>
+                    <div class="google">
+                        <img src="https://cdn-icons-png.flaticon.com/128/300/300221.png" alt="">
+                        <p>GOOGLE</p>
+                    </div>
+                </div>
+                <div style="text-align: center;margin-top: 5%;">------------------------- OR
+                    ---------------------------- </div>
+                <form id="signup-form" action="">
+                    <p>User Name</p>
+                    <input id="username" type="text" placeholder="">
+                    <p>Enter Mobile Number / Email*</p>
+                    <input id="mail" type="text" placeholder="" required>
+                    <p>Enter Password</p>
+                    <input id="password" type="text">
+                    <p>Confirm Password</p>
+                    <input id="confirmpassword" type="text">
+                    <!-- <br> -->
+                    <input class="btn1" type="submit" value="Login">
+                </form>
+                <a class="forgottpwd hello2" href="#">Forgot Password?</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ordersuccessful -->
+    <div id="ordersuccessful">
+        <h2>Your order has been recieved and is being processed my our team</h2>
+        <p>Don't Forget to Check Out Our Other Products!</p>
+        <a href="productpage.html">View all</a>
+        <br>
+        <button id="orderclose">Close</button>
+    </div>
+
+    <!-- midmain -->
+    <div class="midmain">
+        <div class="submain">
+            <img src="https://assets.ajio.com/cms/AJIO/WEB/28032021-D-cartpagebanner-relianceones.jpg" alt="">
+            <div class="content1">
+                <p>My Bag</p>
+                <p class="carttotal"></p>
+            </div>
+            <div class="cartitem">
+                <!-- append data here -->
+            </div>
+            <div class="orderdetail">
+                <div class="orderdetailinner">
+                    <h5>Order Details</h5>
+                    <div class="btotal">
+                        <p>Bag total</p>
+                        <p id="btotal"></p>
+                    </div>
+                    <div style="display: flex;margin-top: -20px;">
+                        <p style="font-size: 12px;color: gray;margin-left: 13px;">Delivery Fee</p>
+                        <p style="color: #d5a249;font-size: 12px;margin-left:40px;margin-right: 5px;">Free</p>
+                        <p style="text-decoration: line-through;margin-right: 2px ;font-size: 12px;">₹99.00</p>
+                    </div>
+                    <div class="btotal">
+                        <p>Order total</p>
+                        <p id="ototal"></p>
+                    </div>
+                    <button type="button" id="proceedtoshipping">
+                        PROCEED TO SHIPPING
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- easy exchange div  -->
+    <div id="upperfooter">
+        <div id="upperfooter1">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjHuCTCHiz7-sR9YwmlVHDZ0UXU-tcjDRIzmGlub9of64k0gsAJXe29kR-9Bpfj1f_YAg&usqp=CAU"
+                    alt="" srcset="">
+                <p>EASY EXCHANGE</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/67/67468.png" alt="" srcset="">
+                <p>100% HANDPICKED</p>
+            </div>
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/128/8866/8866386.png" alt="" srcset="">
+                <p>ASSURED QUALITY</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer of main page -->
+    <div id="footer">
+        <!-- contentrows -->
+        <div id="contentrows">
+            <!-- Ajio column -->
+            <div>
+                <p>Asen</p>
+                <a href="">Who We Are</a>
+                <a href="">Join Our Team</a>
+                <a href="">Terms & Condition</a>
+                <a href="">We Respect Your Privacy</a>
+                <a href="">Fee & Payments</a>
+                <a href="">Returns & Refunds Policy</a>
+                <a href="">Promotions Terms & Condition</a>
+            </div>
+            <!-- help column -->
+            <div>
+                <p>Help</p>
+                <a href="">Track Your Order</a>
+                <a href="">Frequentky Asked Questions</a>
+                <a href="">Returns</a>
+                <a href="">Cancellations</a>
+                <a href="">Payments</a>
+                <a href="">Customer Care</a>
+                <a href="">How Do I Redeem My Coupon</a>
+            </div>
+            <!-- Shop By column -->
+            <div>
+                <p>Shop by</p>
+                <a href="">Men</a>
+                <a href="">Women</a>
+                <a href="">Kids</a>
+                <a href="">Indie</a>
+                <a href="">Stores</a>
+                <a href="">New Arrivals</a>
+                <a href="">Brand Directory</a>
+                <a href="">Home</a>
+                <a href="">Collections</a>
+            </div>
+            <!-- follow us column -->
+            <div>
+                <p>Follow us</p>
+                <a href="">Facebook</a>
+                <a href="">Instagram-ASEN</a>
+                <a href="">Instagram-ASEN LUXE</a>
+                <a href="">Twitter</a>
+                <a href="">Pinterest</a>
+            </div>
+        </div>
+        <div id="paymentbottomdiv">
+            <p>___________________________________________________________________________________________________________________________________________________________________________________________________
+            </p>
+            <p>
+                Payment methods
+            </p>
+            <div id="payoptions">
+                <img src="img/netbanking.png" alt="">
+                <img src="img/verifiedbyvisa.png" alt="" srcset="">
+                <img src="img/mastercard.png" alt="" srcset="">
+                <img src="img/cod.png" alt="" srcset="">
+                <img src="img/jiomoney.png" alt="" srcset="">
+                <div id="securesystem">
+                    <img src="img/securesystem.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="cart.js"></script>
+
+</html>
